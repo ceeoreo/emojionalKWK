@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,32 +15,52 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emojional" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-me-1aF">
-                                <rect key="frame" x="153" y="156" width="108" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-me-1aF">
+                                <rect key="frame" x="130" y="194" width="115" height="132"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🥶"/>
+                                <connections>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lv3-oh-p1A"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bf-DB-tgJ">
-                                <rect key="frame" x="153" y="557" width="108" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bf-DB-tgJ">
+                                <rect key="frame" x="130" y="586" width="115" height="132"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🥵"/>
+                                <connections>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGf-KM-Rh3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6bf-DB-tgJ" firstAttribute="top" secondItem="CgB-me-1aF" secondAttribute="bottom" constant="300" id="32n-wZ-Oys"/>
                             <constraint firstItem="6bf-DB-tgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Uf-Al-mhS"/>
+                            <constraint firstItem="6bf-DB-tgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8go-fT-LLK"/>
+                            <constraint firstItem="6bf-DB-tgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Gf-LQ-nQf"/>
+                            <constraint firstItem="CgB-me-1aF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HzB-Sa-qkZ"/>
+                            <constraint firstItem="6bf-DB-tgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKd-za-r1h"/>
+                            <constraint firstItem="6bf-DB-tgJ" firstAttribute="top" secondItem="CgB-me-1aF" secondAttribute="bottom" constant="350" id="Kll-xQ-Bnk"/>
+                            <constraint firstItem="6bf-DB-tgJ" firstAttribute="top" secondItem="CgB-me-1aF" secondAttribute="bottom" constant="260" id="MLf-J7-DVe"/>
+                            <constraint firstItem="CgB-me-1aF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Nbh-2V-kkH"/>
+                            <constraint firstItem="6bf-DB-tgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O1u-BR-pxg"/>
+                            <constraint firstItem="CgB-me-1aF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="VFk-0m-aYp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CgB-me-1aF" secondAttribute="trailing" constant="130" id="Wys-v0-QBq"/>
+                            <constraint firstItem="CgB-me-1aF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fq8-yq-gVS"/>
+                            <constraint firstItem="6bf-DB-tgJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="rUN-ll-zzh"/>
                             <constraint firstItem="CgB-me-1aF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uMO-uN-AnO"/>
                             <constraint firstItem="6bf-DB-tgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x6I-Rc-kuQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6bf-DB-tgJ" secondAttribute="trailing" constant="130" id="z3v-na-yzZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
+            <point key="canvasLocation" x="136.80000000000001" y="111.57635467980296"/>
         </scene>
     </scenes>
 </document>
